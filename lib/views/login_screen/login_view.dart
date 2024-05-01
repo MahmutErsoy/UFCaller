@@ -1,0 +1,32 @@
+import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
+import 'package:ufc_caller/core/base/base_view.dart';
+import 'package:ufc_caller/core/constants/app_constants.dart';
+import 'package:ufc_caller/views/login_screen/login_view_model.dart';
+
+class LoginView extends StatelessWidget {
+  const LoginView({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return BaseView<LoginViewModel>(
+      viewModel: Provider.of<LoginViewModel>(context, listen: false),
+      onModelReady: (model) async {
+        model.setContext(context);
+        await model.init();
+      },
+      pageBuilder: (context, viewModel, _) => Scaffold(
+        body: SafeArea(
+          child: Padding(
+            padding: EdgeInsets.symmetric(
+              horizontal: AppConstants.appPagePadding,
+            ),
+            child: const Column(
+              children: [],
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
