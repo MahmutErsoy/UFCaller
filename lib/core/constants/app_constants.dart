@@ -5,6 +5,6 @@ class AppConstants {
   AppConstants._();
 
   static const baseUrl = "https://";
-  static Size designSize = const Size(360, 640);
+  static Size designSize = const Size(375, 812);
   static double appPagePadding = 20.w;
 }

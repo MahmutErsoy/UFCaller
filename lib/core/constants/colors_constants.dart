@@ -4,17 +4,15 @@ class ColorConstants {
   static final ColorConstants _instance = ColorConstants._init();
   static ColorConstants get instance => ColorConstants._instance;
 
-  Color blueRibbon = const Color(0xff006AFF);
-  Color jungleGreen = const Color(0xff25AE87);
-  Color gray = const Color(0xff908e8e);
-
+  // app color
+  Color flamingo = const Color(0xffF65C3D);
   Color white = const Color(0xffFFFFFF);
-  Color portGore = const Color(0xff1F1A3D);
-  Color cornflowerBlue = const Color(0xff6688FF);
-  Color dustyGray = const Color(0xff999999);
-  Color tundora = const Color(0xff404040);
-  Color whisper = const Color(0xffF5F6FA);
-  Color alto = const Color(0xffD9D9D9);
+  Color codGray = const Color(0xff0A0A0A);
+  Color whisper = const Color(0xffF8F8FB);
+  Color bombay = const Color(0xffABAFB3);
+  Color dodgerBlue = const Color(0xff3375FE);
+  Color malachite = const Color(0xff01C448);
+  Color amber = const Color(0xffFEBF00);
 
   ColorConstants._init();
 }
