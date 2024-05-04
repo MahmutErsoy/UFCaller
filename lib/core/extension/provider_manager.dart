@@ -3,6 +3,7 @@ import 'package:provider/single_child_widget.dart';
 import 'package:ufc_caller/views/alarm_screen/alarm_view_model.dart';
 import 'package:ufc_caller/views/home_screen/home_view_model.dart';
 import 'package:ufc_caller/views/login_screen/login_view_model.dart';
+import 'package:ufc_caller/views/main_screen/main_view_model.dart';
 import 'package:ufc_caller/views/search_screen/search_view_model.dart';
 import 'package:ufc_caller/views/settings_screen/settings_view_model.dart';
 import 'package:ufc_caller/views/signUp_screen/signUp_view_model.dart';
@@ -37,6 +38,9 @@ class ProviderManager {
     ),
     ChangeNotifierProvider<AlarmViewModel>(
       create: (_) => AlarmViewModel(),
+    ),
+    ChangeNotifierProvider<MainViewModel>(
+      create: (_) => MainViewModel(),
     ),
   ];
 }
