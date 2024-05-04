@@ -5,7 +5,7 @@ import 'package:provider/provider.dart';
 import 'package:ufc_caller/core/constants/app_constants.dart';
 import 'package:ufc_caller/core/extension/provider_manager.dart';
 import 'package:ufc_caller/core/extension/theme_provider.dart';
-import 'package:ufc_caller/views/signUp_screen/signUp_view.dart';
+import 'package:ufc_caller/views/main_screen/main_view.dart';
 
 Future<void> main() async {
   Provider.debugCheckInvalidValueType = null;
@@ -37,7 +37,7 @@ class MyApp extends StatelessWidget {
               theme: MyThemes.lightTheme,
               darkTheme: MyThemes.darkTheme,
               debugShowCheckedModeBanner: false,
-              home: const SignUpView(),
+              home: const MainView(),
             );
           },
         ),
@@ -45,4 +45,3 @@ class MyApp extends StatelessWidget {
     );
   }
 }
-

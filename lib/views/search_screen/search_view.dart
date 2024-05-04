@@ -18,13 +18,12 @@ class SearchView extends StatelessWidget {
       pageBuilder: (context, viewModel, _) => Scaffold(
         body: SafeArea(
           child: Padding(
-            padding: EdgeInsets.symmetric(
-              horizontal: AppConstants.appPagePadding,
-            ),
-            child: const Column(
-              children: [],
-            ),
-          ),
+              padding: EdgeInsets.symmetric(
+                horizontal: AppConstants.appPagePadding,
+              ),
+              child: Center(
+                child: Text("SEARCH", style: Theme.of(context).textTheme.headline1),
+              )),
         ),
       ),
     );

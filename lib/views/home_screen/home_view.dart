@@ -4,9 +4,14 @@ import 'package:ufc_caller/core/base/base_view.dart';
 import 'package:ufc_caller/core/constants/app_constants.dart';
 import 'package:ufc_caller/views/home_screen/home_view_model.dart';
 
-class HomeView extends StatelessWidget {
+class HomeView extends StatefulWidget {
   const HomeView({Key? key}) : super(key: key);
 
+  @override
+  State<HomeView> createState() => _HomeViewState();
+}
+
+class _HomeViewState extends State<HomeView> {
   @override
   Widget build(BuildContext context) {
     return BaseView<HomeViewModel>(
@@ -21,9 +26,9 @@ class HomeView extends StatelessWidget {
             padding: EdgeInsets.symmetric(
               horizontal: AppConstants.appPagePadding,
             ),
-            child: const Column(
-              children: [],
-            ),
+            child: Center(
+                child: Text("HOME", style: Theme.of(context).textTheme.headline1),
+              )
           ),
         ),
       ),
