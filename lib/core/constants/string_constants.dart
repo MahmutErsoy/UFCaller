@@ -17,4 +17,9 @@ class StringConstants {
   static const String enterFullName = "Enter full name";
   static const String haveAccount = "Have a Account";
   static const String logIn = "Log In";
+
+  static const String home = "Home";
+  static const String alarm = "Alarm";
+  static const String search = "Search";
+  static const String settings = "Settings";
 }

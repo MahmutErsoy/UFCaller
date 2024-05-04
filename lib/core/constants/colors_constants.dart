@@ -13,6 +13,7 @@ class ColorConstants {
   Color dodgerBlue = const Color(0xff3375FE);
   Color malachite = const Color(0xff01C448);
   Color amber = const Color(0xffFEBF00);
+  Color black = const Color(0xff000000);
 
   ColorConstants._init();
 }
